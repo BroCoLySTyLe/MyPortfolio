@@ -127,7 +127,13 @@
   
   }
 
-
+  button  {
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    
+}
 
 
 /* Navbar */
@@ -136,17 +142,20 @@
 
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-light-grey);
+    background-color: #000a12;
     align-items: center;
     color: var(--color-light-white);
 }
 
 .navbar__logo{
-    font-size: var(--font-regular);
+    font-size: 15px;
     font-weight: var(--weight-semi-bold);
+    padding:8px;
 }
 
 .navbar__menu {
+    font-size: 14px;
+    font-weight: var(--weight-semi-bold);
     display: flex;
 
 }
@@ -166,7 +175,39 @@
 }
 
 .navbar__menu__item:hover{
-    background-color: var(--color-grey);
+    background-color: #313131;
     transition: all 700ms ease-out;
 
+}
+
+
+
+/* Home */
+
+#home {
+    background: url("imgs/1712023E4E38B58039.jpg") center/cover no-repeat;
+    padding:40px;
+    text-align: center;
+}
+
+.home__title,.home__description{
+     color: rgb(196, 196, 196);;
+   
+}
+
+.home__photo{
+    width:250px;
+    height:250px;
+    border-radius:50%
+}
+
+.home__contact{
+    color:rgb(223, 221, 221);
+    font-size:16px;
+    font-weight: 600;
+    margin: 18px;
+    padding: 4px;
+    border:2px solid;
+    border-radius: 5px;
+    border-color: rgb(40, 47, 68);
 }
