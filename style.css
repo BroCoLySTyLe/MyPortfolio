@@ -176,7 +176,7 @@
 
 .navbar__menu__item:hover{
     background-color: #313131;
-    transition: all 500ms ease-out;
+    transition: all 400ms ease-out;
 
 }
 
