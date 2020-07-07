@@ -139,12 +139,23 @@
 /* Navbar */
 
 #navbar {
-
+    width: 100vw;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    background-color: #000a12;
+    /* background-color: #000a12; */
+    background-color:transparent;
     align-items: center;
     color: var(--color-light-white);
+    transition: all 250ms ease-in;
+
+}
+
+
+#navbar.navbar--dark{
+    background:url("imgs/1712023E4E38B58039.jpg") center/cover no-repeat;
+    z-index:100;
+    opacity:1
 }
 
 .navbar__logo{
@@ -175,8 +186,10 @@
 }
 
 .navbar__menu__item:hover{
-    background-color: #313131;
-    transition: all 400ms ease-out;
+    background:url("imgs/1712023E4E38B58039.jpg") center/cover no-repeat;
+
+    /* background-color: #313131; */
+    transition: all 350ms ease-out;
 
 }
 
@@ -194,14 +207,14 @@ section {
 #home {
     background:url("imgs/1712023E4E38B58039.jpg") center/cover no-repeat;
     padding:40px;
-
+    padding-top: 120px;
     text-align: center;
     max-width: 100vw;
 
 }
 
 .home__title,.home__description{
-     color: rgb(196, 196, 196);;
+     color: rgb(218, 218, 218);
    
 }
 
@@ -258,12 +271,12 @@ section {
 padding: 30px;
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
 
 }
 
 .major{
-
-    margin:10px
+    margin:80px
 }
 
 .major__title, .major__description {
