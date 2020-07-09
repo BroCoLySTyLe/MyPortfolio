@@ -34,7 +34,7 @@
                 <li class="navbar__menu__item" data-link="#about">About</li>
                 <li class="navbar__menu__item" data-link="#skills">Skills</li>
                 <li class="navbar__menu__item" data-link="#work">My work</li>
-                <li class="navbar__menu__item" data-link="#testimonial">Testimonial</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
                 <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
         </div>
@@ -90,10 +90,12 @@
             <div class="job">
                 <img src="/imgs/jobs/koreaUniv.png" alt="Korea University" class="job__logo_" />
                 <div class="job__description">
-                    <div class="job__name">Korea University - Computer Science, Data Mining Lab</div>
-                    <div class="job__period">2016.02 ~ 2018.02</div>
+                    <div class="job__name">Korea University - Data Mining Lab, Master's Degree</div>
+                    <div class="job__name">Korea University - Computer Science, Bachelor's Degree</div>
+                    <div class="job__period">2011.02 ~ 2018.02</div>
                 </div>
             </div>
+
         </div>
 
 
@@ -204,13 +206,13 @@
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-            <button class="category__btn active">All <span class="category__count">8</button>
-            <button class="category__btn">Artificial Intelligence <span class="category__count">3</button>
-            <button class="category__btn">Front-end <span class="category__count">3</button>
-            <button class="category__btn">Natural Language Processing <span class="category__count">2</button>
+            <button class="category__btn active" data-filter="*">All <span class="category__count">4</button>
+            <button class="category__btn" data-filter="AI">Artificial Intelligence <span class="category__count">2</button>
+            <button class="category__btn" data-filter="front-end">Front-end <span class="category__count">2</button>
+            <button class="category__btn" data-filter="NLP">Natural Language Processing <span class="category__count">2</button>
         </div>
         <div class="work__projects">
-            <a class="project" href="https://github.com/BroCoLySTyLe/MyPortfolio" target="_blank" >
+            <a class="project" href="https://github.com/BroCoLySTyLe/MyPortfolio" target="_blank" data-type="front-end">
                 <img class="project__img" src="/imgs/MyPortfolio.PNG" alt="MyPortfolio">
                 <div class="project__description">
                     <h3>MY Portfolio Website</h3>
@@ -218,17 +220,19 @@
                 </div>
             </a>
 
-            <a class="project" href="https://github.com/BroCoLySTyLe/MyPortfolio" target="_blank" >
-                <img class="project__img" src="/imgs/broc.jpg" alt="Chatbot Platform Front-end">
+            <a class="project" href="https://github.com/BroCoLySTyLe/MyPortfolio" target="_blank" data-type="AI, front-end" >
+                <img class="project__img" src="/imgs/hitee_studio.PNG" alt="Chatbot Platform Front-end">
                 <div class="project__description">
                     <h3>Hi-Tee Studio <br>(Chatbot Platform Front-end)</h3>
-                    <span>Coding with TOP(Tmax's Front-end IDE) HTML and CSS , JavaScript</span>
+                    <span>Single Page Application</span> 
+                    <span>using TOP(Tmax's Front-end IDE)</span> 
+                    <span>with HTML and CSS , JavaScript</span>
                 </div>
             </a>
 
 
             
-            <a class="project" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2029-1" target="_blank" >
+            <a class="project" href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-018-2029-1" target="_blank" data-type="NLP">
                 <img class="project__img" src="/imgs/VarDrugPub.PNG" alt="VarDrugPub">
                 <div class="project__description">
                     <h3>VarDrugPub<br>(Text-mining)</h3>
@@ -237,7 +241,7 @@
             </a>
 
 
-            <a class="project" href="http://203.255.191.229:8080/chimerdbv31/mchimerpub.cdb" target="_blank" >
+            <a class="project" href="http://203.255.191.229:8080/chimerdbv31/mchimerpub.cdb" target="_blank" data-type="AI, NLP">
                 <img class="project__img" src="/imgs/ChimerPub.PNG" alt="VarDrugPub">
                 <div class="project__description">
                     <h3>ChimerPub<br>(Text-mining)</h3>

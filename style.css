@@ -507,8 +507,14 @@ background-color: var(--color-grey);
 
     display: flex;
     flex-wrap: wrap;
+    opacity: 1;
     justify-content: center;
+    transition: all 250ms ease-out;
+}
 
+.work__projects.anim-out{
+    opacity:0;
+    transform: scale(0.96) translateY(40px)
 }
 
 .project{
@@ -517,8 +523,13 @@ background-color: var(--color-grey);
     width: 280px;
     height: 320px;
     margin:20px;
+    /* transition: display 300ms ease-in; */
     /* padding:5px; */
 
+}
+
+.project.invisible{
+    display: none;
 }
 
 .project__img{
