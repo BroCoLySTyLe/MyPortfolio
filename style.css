@@ -61,9 +61,10 @@
   }
   
   body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      cursor: default;
+    align-items: stretch;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
   }
 
   a {
@@ -139,7 +140,7 @@
 /* Navbar */
 
 #navbar {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -164,7 +165,7 @@
     padding:8px;
 }
 
-.navbar__menu {
+.navbar__menus {
     font-size: 14px;
     font-weight: var(--weight-semi-bold);
     display: flex;
@@ -178,20 +179,30 @@
     padding:8px 4px;
     margin: 0 4px;
     cursor: pointer;
+    border: 1px solid transparent;
+
 }
 
-.navbar__menu__item.active{
-
-    border: 1px solid var(--color-light-white);
-}
 
 .navbar__menu__item:hover{
+    border: 1px solid var(--color-light-white);
+
     background:url("imgs/1712023E4E38B58039.jpg") center/cover no-repeat;
 
     /* background-color: #313131; */
     transition: all 350ms ease-out;
 
 }
+
+
+#navbar .hamberger{
+    position: fixed;
+    right: 10px;
+    top:10px;
+    display: none;
+}
+
+
 
 section {
 
@@ -212,6 +223,7 @@ section {
     max-width: 100vw;
 
 }
+
 /* #home.home--dark{
     opacity:1
 } */
@@ -624,3 +636,53 @@ color: var(--color-white);
     opacity: 1;
     pointer-events: auto;
 }
+
+
+@media screen and (max-width:600px){
+
+
+
+    #navbar{
+        background:url("imgs/1712023E4E38B58039.jpg") center/cover no-repeat;
+  
+        align-items: flex-start;
+        justify-content: center;
+        top:0;
+        position: fixed;
+        display: flex;
+        /* background-color:transparent; */
+        z-index:100;
+        opacity:1;
+        flex-direction: column;
+    }
+
+    .navbar__logo{
+        align-content: flex-start;
+
+    }
+
+    .navbar__menus {
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    .navbar__menus.active{
+        display: flex;   
+    }
+
+
+    .navbar__menu__item{
+        width: 100vw;
+        text-align: center;
+    }
+
+    #navbar .hamberger{
+        font-size: 17px;
+        color : white;
+        display: flex;
+    }
+
+}
+
+
