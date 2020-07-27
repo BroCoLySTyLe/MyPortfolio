@@ -6,16 +6,16 @@ let navbarHeight=navbar.getBoundingClientRect().height
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 const arrowUp = document.querySelector('.arrow-up');
+let minimode=false;
 
 window.addEventListener('resize',()=>{
     navbarHeight=navbar.getBoundingClientRect().height
-    // if(window.innerWidth<=600){
-    //     // document.querySelector(".navbar__menu").style.display="none";
-           
-    // }else{
-    //     // document.querySelector(".navbar__menus").style.display="flex";
+    if(window.innerWidth<=600){
+        
+    }else{
+        // document.querySelector(".navbar__menus").style.display="flex";
 
-    // }
+    }
 })
 
 document.addEventListener('scroll',()=>{
